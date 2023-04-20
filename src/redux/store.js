@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import starshipSlice from './starshipSlice.js'
+import starshipSlice from './starshipSlice'
 
 export const store = configureStore({
   reducer: {
