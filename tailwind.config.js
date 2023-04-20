@@ -7,7 +7,11 @@ module.exports = {
     extend: {
       fontFamily : {
         'rale' : [ 'Raleway', 'sans-serif'],
-      }
+        'lato' : ['Lato', 'sans-serif']
+      },
+      aspectRatio: {
+        '3/2': '3 / 2',
+      },
     },
   },
   plugins: [],
