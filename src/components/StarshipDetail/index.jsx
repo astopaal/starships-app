@@ -1,14 +1,26 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import Loading from "../Loading";
 
 const StarshipDetail = ({starshipDetail, loadStatus}) => {
 
-    const navigate = useNavigate();
-    console.log(starshipDetail);
-    console.log(loadStatus)
+    const navigate = useNavigate(); //for back button
+
+
     return (
         <>
+
+            {/* I make different renders according to the promise status value.
+                If success I render the details,
+                if loading I render the loading component,
+                in other cases I render the error message. */}
+
+            {/*
+                If I keep the data in lcoalStorage,
+                the api request can be blocked on return without pulling data from the api again,
+                but I do not prefer this.
+            */}
+
             {loadStatus === "SUCCESS" &&
                 <div className="mt-20 w-3/5 flex flex-col m-auto ">
                     <div className="my-1 py-10 px-2 bg-white bg-opacity-80 rounded text-center">
@@ -66,7 +78,7 @@ const StarshipDetail = ({starshipDetail, loadStatus}) => {
             {loadStatus === "LOADING" && <Loading/>}
 
             <button
-                onClick={() => navigate(-1)}
+                onClick={() => navigate(-1)} /* navigate(-1) redirects to the previous route. */
                 className="-bottom-[-4%] -right-[-2%] fixed inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
