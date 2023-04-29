@@ -7,18 +7,19 @@ const initialState = {
   starshipsStatus: STATUS.IDLE,
   starshipDetail: [],
   starshipDetailStatus: STATUS.IDLE,
+  currentPage: 1,
 };
 
 export const getStarships = createAsyncThunk(
   "getStarships",
-  async (_, thunkAPI) => {
+  async (page, thunkAPI) => {
     try {
-      const response = await axios.get("https://swapi.dev/api/starships");
+      const response = await axios.get(`https://swapi.dev/api/starships/?page=${page}`);
       return response.data.results;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);
     }
-  }
+  },
 );
 
 export const getStarshipDetails = createAsyncThunk(

@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
 	background: linear-gradient(-45deg, #3b3b3b, #111119, #314850, #161918);
 	background-size: 400% 400%;
