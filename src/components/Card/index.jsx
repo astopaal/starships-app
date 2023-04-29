@@ -26,7 +26,7 @@ const Card = ({ index, starship }) => {
         <div className="p-1 bg-black rounded-lg border border-white border-opacity-25">
           <img
             className="rounded object-cover"
-            src="https://preview.redd.it/clone-wars-style-nubian-starship-animation-by-me-v0-babd2xcbt0a91.gif?width=640&crop=smart&format=png8&s=54bd755485b850573be0663bec5ed42916635770"
+            src=""
             alt="starship"
           />
         </div>
