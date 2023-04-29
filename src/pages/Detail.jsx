@@ -24,7 +24,7 @@ const Detail = () => {
   return (
     <>
       <Header />
-      <StarshipDetail starshipDetail = {starshipDetail} />
+      <StarshipDetail loadStatus={starshipDetailStatus} starshipDetail = {starshipDetail} />
     </>
   );
 };

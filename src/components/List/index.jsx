@@ -79,13 +79,13 @@ const List = () => {
           disabled={currentPage === 1}
           className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"
         >
-          Prev
+          {"<"} Prev
         </button>
 
         {starships.length > 0 && (
           <button
-          onClick={handleNext} class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
-            Next
+          onClick={handleNext} className={"bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r"}>
+            Next {">"}
           </button>
         )}
       </div>

@@ -26,7 +26,7 @@ const Card = ({ index, starship }) => {
         <div className="p-1 bg-black rounded-lg border border-white border-opacity-25">
           <img
             className="rounded object-cover"
-            src=""
+            src={require('../../assets/starship.png')}
             alt="starship"
           />
         </div>
