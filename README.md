@@ -12,7 +12,7 @@ Ardından .env dosyasında REACT_APP_API_URL değerine https://swapi.dev/api de�
 
 Son olarak, projeyi başlatmak için `npm start` komutunu kullanın.
 
-Kullanılan teknolojiler : 
+### Kullanılan teknolojiler : 
 - React
 - Redux Toolkit
 - Tailwind Css
