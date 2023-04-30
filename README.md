@@ -1,5 +1,7 @@
 # Starship Listing App
 
+Live : https://cool-cuchufli-172c7b.netlify.app/
+
 Bu uygulama, patika.dev FMSS Bilişim Frontend Practicum final ödevidir.
 
 Uygulamayı çalıştırmak için, `git clone https://github.com/astopaal/starships-app` ile klonladıktan sonra, proje dizininde `npm install` komutunu kullanarak bağlılıkları kurun.
@@ -48,3 +50,9 @@ src
     │   status.js //loading,idle,fail ve success durumlarını tutan bir object barındırır
 App.js
 ```
+
+
+## Ekran Görüntüleri
+
+![image](https://user-images.githubusercontent.com/85809119/235360909-86f6d1a3-d51a-40ba-af74-dd206d9cd6d5.png)
+![image](https://user-images.githubusercontent.com/85809119/235360916-233f3921-d50b-4f69-b764-bfd953bc7858.png)
