@@ -75,7 +75,7 @@ const StarshipDetail = ({starshipDetail, loadStatus, navigate}) => {
                                 transition={{duration: 0.5}}
                                 className="my-1 py-2 px-2 bg-white bg-opacity-80 rounded flex-grow">
                                 <p className="text-xl tracking-widest font-lato font-bold">
-                                    Length : {starshipDetail.length}
+                                    Passengers : {starshipDetail.passengers}
                                 </p>
                             </motion.div>
                             <motion.div
@@ -114,7 +114,7 @@ const StarshipDetail = ({starshipDetail, loadStatus, navigate}) => {
                                 transition={{duration: 0.5}}
                                 className="my-1 py-2 px-2 bg-white bg-opacity-80 rounded flex-grow">
                                 <p className="text-xl tracking-widest font-lato font-bold">
-                                    HD Rating : {starshipDetail.hyperdrive_rating}
+                                    Cargo : {starshipDetail.cargo_capacity}
                                 </p>
                             </motion.div>
                             <motion.div

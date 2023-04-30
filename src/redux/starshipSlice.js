@@ -5,7 +5,6 @@ import axios from "axios";
 //initial states
 const initialState = {
     starships: [],
-
     //I set the initial status to idle
     starshipsStatus: STATUS.IDLE,
     starshipDetail: [],
